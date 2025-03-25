@@ -11,9 +11,9 @@ enum RolesEnum: string
     public static function labels(): array
     {
         return [
-          self::Admin->value = 'Admin',
-          self::Commenter->value = 'Commenter',
-          self::User->value = 'User',
+          self::Admin->value => 'Admin',
+          self::Commenter->value => 'Commenter',
+          self::User->value => 'User',
         ];
     }
 
