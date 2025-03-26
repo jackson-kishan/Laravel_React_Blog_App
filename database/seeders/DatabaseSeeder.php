@@ -51,16 +51,19 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'User User',
             'email' => 'user@example.com',
+            'password' => 'user1234',
         ])->assignRole(RolesEnum::User);
 
         User::factory()->create([
             'name' => 'Commenter User',
             'email' => 'commenter@example.com',
+            'password' => 'commenter1234'
         ])->assignRole(RolesEnum::Commenter);
 
         User::factory()->create([
             'name' => 'Admin User',
-            'email' => 'Admin@example.com',
+            'email' => 'admin@example.com',
+            'password' => 'admin1234',
         ])->assignRole(RolesEnum::Admin);
 
     }
